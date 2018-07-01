@@ -1,0 +1,29 @@
+{
+  "name": "matchmaking",
+  "version": "1.0.0",
+  "description": "matches users together to play games. ",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+	"start":"nodemon"
+  },
+  "keywords": [
+    "match",
+    "dota",
+    "firstblood",
+    "pubg"
+  ],
+  "author": "zanemx@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-validator": "^5.2.0",
+    "mongojs": "^2.6.0"
+  }
+}
