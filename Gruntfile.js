@@ -15,6 +15,9 @@ module.exports = (grunt) => {
 			}
 		},
 		watch:{
+			options:{
+				atBegin:true
+			},
 			scripts:{
 				files:[
 					'**/*.js',

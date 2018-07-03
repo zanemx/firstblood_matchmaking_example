@@ -10,7 +10,8 @@ $ git clone https://github.com/zanemx/firstblood_matchmaking_example.git
 $ cd firstblood_matchmaking_example
 $ npm install
 $ grunt
+$ mocha
 ```
 1 liner
 ```
-$ git clone https://github.com/zanemx/firstblood_matchmaking_example.git && cd firstblood_matchmaking_example && npm install && grunt
+git clone https://github.com/zanemx/firstblood_matchmaking_example.git && cd firstblood_matchmaking_example && npm install && grunt
