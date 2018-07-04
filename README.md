@@ -1,5 +1,5 @@
 # Matchmaking Solution 1v1
-Auto joins the to a "lobby" and searches for a reasonable match based on users MMR.  
+Auto joins user to a "lobby" and searches for a reasonable match based on users MMR.  
 A variable range value is used to query users. If no suitable user is found in said range  
 the range is expanded by n and the search is run again.  
 There's a maxRange var that could be modified by the user wait time.  
