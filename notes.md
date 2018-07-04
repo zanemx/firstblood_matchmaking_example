@@ -5,6 +5,7 @@
 	supertest - http req testing without starting express
 	moc user data from - https://mockaroo.com/
 	swagger - for api docs (probably not needed for the demo)
+	eslint - js linting
 
 ## Keywords
 	[MMR](https://dota2.gamepedia.com/Matchmaking_Rating)  
@@ -26,5 +27,3 @@
 	use cron job for finding players
 
 	cache players that have been paired with user for future reference
-
-	

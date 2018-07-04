@@ -4,7 +4,7 @@ let request = require('request');
 let mocusers = require('./../mocusers');
 let _ = require('lodash');
 
-it('POST /match/find',(done) => {
+it('POST to /match/find',(done) => {
 
 	// get random user from ./mocusers.js
 	let user = _.sample(mocusers);
@@ -22,6 +22,7 @@ it('POST /match/find',(done) => {
 			assert(null == err,err);
 
 			let match = JSON.parse(body);
+			assert(null != match,'body must not be null');
 			assert(match.id > 0,'match.id must be > 0');
 
 			console.log("Match Found!");
