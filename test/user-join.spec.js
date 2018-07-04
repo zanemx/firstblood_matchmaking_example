@@ -4,14 +4,14 @@ let request = require('request');
 let mocusers = require('./../mocusers');
 let _ = require('lodash');
 
-it('POST to /match/find',(done) => {
-
+let post_match_find_test_count = 3;
+let post_match_find = (done) => {
 	// get random user from ./mocusers.js
 	let user = _.sample(mocusers);
 
 	assert(user.id > 0,'user.id must be > 0');
 
-	console.log(`Finding match for ${user.first_name} (mmr ${user.mmr})`);
+	console.log(`\nFinding match for ${user.first_name} (mmr ${user.mmr})`);
 
 	let search = (cb) => {
 
@@ -40,5 +40,9 @@ it('POST to /match/find',(done) => {
 		}
 	};
 	search(callback);
+};
 
-}).timeout(10000);
+console.log(`testing (POST to /match/find) ${post_match_find_test_count} times.`);
+for(let i =0;i < post_match_find_test_count;i++){
+	it('POST to /match/find',post_match_find).timeout(10000);
+}
